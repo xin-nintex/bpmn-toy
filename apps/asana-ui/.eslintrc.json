@@ -13,7 +13,6 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "asanaApp",
             "style": "camelCase"
           }
         ],
@@ -21,7 +20,6 @@
           "error",
           {
             "type": "element",
-            "prefix": "asana-app",
             "style": "kebab-case"
           }
         ]
