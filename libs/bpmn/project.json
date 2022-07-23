@@ -1,0 +1,38 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/bpmn/src",
+  "prefix": "asana-app",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["dist/libs/bpmn"],
+      "options": {
+        "project": "libs/bpmn/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/bpmn/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/bpmn/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/bpmn"],
+      "options": {
+        "jestConfig": "libs/bpmn/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/bpmn/**/*.ts", "libs/bpmn/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}

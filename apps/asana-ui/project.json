@@ -5,7 +5,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/asana-ui",
         "index": "apps/asana-ui/src/index.html",
@@ -13,8 +15,13 @@
         "polyfills": "apps/asana-ui/src/polyfills.ts",
         "tsConfig": "apps/asana-ui/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/asana-ui/src/favicon.ico", "apps/asana-ui/src/assets"],
-        "styles": ["apps/asana-ui/src/styles.scss"],
+        "assets": [
+          "apps/asana-ui/src/favicon.ico",
+          "apps/asana-ui/src/assets"
+        ],
+        "styles": [
+          "apps/asana-ui/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -74,12 +81,17 @@
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": ["apps/asana-ui/**/*.ts", "apps/asana-ui/**/*.html"]
+        "lintFilePatterns": [
+          "apps/asana-ui/**/*.ts",
+          "apps/asana-ui/**/*.html"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/asana-ui"],
+      "outputs": [
+        "coverage/apps/asana-ui"
+      ],
       "options": {
         "jestConfig": "apps/asana-ui/jest.config.ts",
         "passWithNoTests": true

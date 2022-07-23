@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@asana-app/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@asana-app/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@asana/bpmn": ["libs/bpmn/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

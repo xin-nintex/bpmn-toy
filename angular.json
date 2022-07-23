@@ -5,6 +5,7 @@
     "api": "apps/api",
     "api-interfaces": "libs/api-interfaces",
     "asana-ui": "apps/asana-ui",
-    "asana-ui-e2e": "apps/asana-ui-e2e"
+    "asana-ui-e2e": "apps/asana-ui-e2e",
+    "bpmn": "libs/bpmn"
   }
 }
