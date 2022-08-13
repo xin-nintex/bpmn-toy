@@ -2,12 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { NxWelcomeComponent } from './nx-welcome.component';
 import { HttpClientModule } from '@angular/common/http';
-import { BpmnDirective } from './bpmn.directive';
 
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent, BpmnDirective],
+  declarations: [AppComponent,],
   imports: [BrowserModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
